@@ -1,0 +1,88 @@
+<!-- Nadiola Grosvenor
+ July 2025
+ Restaurant Recommendation Website
+ Location-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <br>
+    <br>
+    <!--might replace the title with my own image so the font is the way that i want it-->
+    <title> Welcome to Raleigh Restaurant Reach!</title>
+</head>
+
+<body> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+<style>
+  .bubbly {
+    font-family: 'Cherry Bomb One', cursive;
+    letter-spacing: 2px; /* Try 1px to 4px */
+  }
+  body {
+    background-image: url("C:/Users/17063/Downloads/CompSci Personal Projects/Recommendation System Project/recommendation_website_portfolio_project_frontend/2Background Img (for restaurant proj).jpeg"); /* coral checkerboard, for example */
+    background-size: cover;      /* scales image to cover the screen */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling */
+    min-height: 150vh; /* makes the body fill the screen */
+    margin: 0;     /* removes default browser margin */
+  }
+</style>
+
+<div style="text-align: center; color: #cf5f57; font-size: 24px;  margin: 20px;">
+    <h1 class="bubbly">Ok! Now specify your search parameters!<br>Which location do you want restaurants from?</h1>
+</div>
+
+<form class="toggle-group" style="text-align: center; color: #960e05; margin: 40px;" action="/" method="POST">
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="ANGIER">ANGIER</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="APEX">APEX</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="CARY">CARY</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="CLAYTON">CLAYTON</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="FUQUAY VARINA">FUQUAY VARINA</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="GARNER">GARNER</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="HOLLY SPRINGS">HOLLY SPRINGS</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="KNIGHTDALE">KNIGHTDALE</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="MORRISVILLE">MORRISVILLE</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="NEW HILL">NEW HILL</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="RALEIGH">RALEIGH</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="ROLESVILLE">ROLESVILLE</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="RTP">RTP</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="WAKE FOREST">WAKE FOREST</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="WENDELL">WENDELL</button>
+  <button style="background-color: #faa8a2; margin: 20px; color: #cf5f57; font-size: 40px; padding: 24px 48px; border-radius: 45px; border-color: #ffeae8;" type="submit" class="toggle" name= "search" value="ZEBULON">ZEBULON</button>
+</form>
+
+<!-- show results -->
+<!--{% if results %}
+  <div style="text-align: center; color: #cf5f57; font-size: 24px;  margin: 20px;">
+    <h2 class="bubbly">Results:</h2>
+  </div>
+  <p style= "text-align: center; color: #cf5f57; font-size: 14px;  margin: 10px;" class="bubbly">{{ results|safe }}</p>
+{% endif %}
+{% if error %}
+  <p style="color:red;">{{ error }}</p>
+{% endif %}-->
+
+<div class="toggle-group" style="text-align: left; color: #960e05; margin: 30px;">
+  <a href= "C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\pg2.html"><button style="background-color: #faa8a2; margin: 30px; color: #cf5f57; font-size: 60px; padding: 30px 110px; border-radius: 60px; border-color: #ffeae8;" type="button" class="toggle" data-value="Back">Back</button></a>
+</div>
+
+<div style="text-align: center; margin: 30px;">
+  <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Drink Img (for restaurant proj).png" style="margin: 20px;" alt="Drink Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Bread Img (for restaurant proj).png" style="margin: 20px;" alt="Bread Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Cupcake Img (for restaurant proj).png" style="margin: 20px;" alt="Cupcake Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Egg Img (for restaurant proj).png" style="margin: 20px;" alt="Cupcake Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Fork Img (for restaurant proj).png" style="margin: 20px;" alt="Fork Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Knife Img (for restaurant proj).png" style="margin: 20px;" alt="Fork Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Pizza Img (for restaurant proj).png" style="margin: 20px;" alt="Pizza Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Ramen Img (for restaurant proj).png" style="margin: 20px;" alt="Ramen Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Taco Img (for restaurant proj).png" style="margin: 20px;" alt="Taco Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Bao Img (for restaurant proj).png" style="margin: 20px;" alt="Bao Img" width="70" height="70">
+    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\recommendation_website_portfolio_project_frontend\Boba Img (for restaurant proj).png" style="margin: 20px;"alt="Boba Img" width="70" height="70">
+</div>
+
+</body> 
+</html>
