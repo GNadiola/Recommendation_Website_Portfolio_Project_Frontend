@@ -23,7 +23,7 @@
     letter-spacing: 2px; /* Try 1px to 4px */
   }
   body {
-    background-image: url("C:/Users/17063/Downloads/CompSci Personal Projects/Recommendation System Project/Recommendation_Website_Portfolio_Project_Frontend/2Background Img (for restaurant proj).jpeg"); /* coral checkerboard, for example */
+    background-image: url('{{ url_for('static', filename='assets/2Background Img (for restaurant proj).jpeg') }}'); /* coral checkerboard, for example */
     background-size: cover;      /* scales image to cover the screen */
     background-position: center; /* centers the image */
     background-repeat: no-repeat; /* prevents tiling */
@@ -56,21 +56,21 @@
  
 
 <div class="toggle-group" style="text-align: left; color: #960e05; margin: 30px;">
-  <a href="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\pg2.html"><button style="background-color: #faa8a2; margin: 30px; color: #cf5f57; font-size: 60px; padding: 30px 110px; border-radius: 60px; border-color: #ffeae8;" type="button" class="toggle" data-value="Back">Back</button></a>
+  <a href="pg2.html"><button style="background-color: #faa8a2; margin: 30px; color: #cf5f57; font-size: 60px; padding: 30px 110px; border-radius: 60px; border-color: #ffeae8;" type="button" class="toggle" data-value="Back">Back</button></a>
 </div>
 
 <div style="text-align: center; margin: 30px;">
- <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Drink Img (for restaurant proj).png" style="margin: 20px;" alt="Drink Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Bread Img (for restaurant proj).png" style="margin: 20px;" alt="Bread Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Cupcake Img (for restaurant proj).png" style="margin: 20px;" alt="Cupcake Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Egg Img (for restaurant proj).png" style="margin: 20px;" alt="Cupcake Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Fork Img (for restaurant proj).png" style="margin: 20px;" alt="Fork Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Knife Img (for restaurant proj).png" style="margin: 20px;" alt="Fork Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Pizza Img (for restaurant proj).png" style="margin: 20px;" alt="Pizza Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Ramen Img (for restaurant proj).png" style="margin: 20px;" alt="Ramen Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Taco Img (for restaurant proj).png" style="margin: 20px;" alt="Taco Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Bao Img (for restaurant proj).png" style="margin: 20px;" alt="Bao Img" width="70" height="70">
-    <img src="C:\Users\17063\Downloads\CompSci Personal Projects\Recommendation System Project\Recommendation_Website_Portfolio_Project_Frontend\Boba Img (for restaurant proj).png" style="margin: 20px;"alt="Boba Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Drink Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Drink Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Bread Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Bread Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Cupcake Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Cupcake Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Egg Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Egg Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Fork Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Fork Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Knife Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Knife Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Pizza Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Pizza Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Ramen Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Ramen Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Taco Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Taco Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Bao Img (for restaurant proj).png') }}" style="margin: 20px;" alt="Bao Img" width="70" height="70">
+    <img src="{{ url_for('static', filename='assets/Boba Img (for restaurant proj).png') }}" style="margin: 20px;"alt="Boba Img" width="70" height="70">
 </div>
 
 </body> 
